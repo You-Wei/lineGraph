@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/black"
+    tools:context="com.example.yyerg.hrv.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/image1"
+        android:layout_above="@+id/llBarChart"
+        android:layout_alignRight="@+id/llBarChart"
+        android:src="@drawable/picture1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inventory"
+        android:textSize="18sp"
+        android:text="Inventory"
+        android:layout_below="@+id/workingOrder"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workingOrder"
+        android:textSize="18sp"
+        android:text="Product Name: Magnet"
+        android:layout_below="@+id/productName"
+        android:layout_alignLeft="@+id/productName"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productName"
+        android:textSize="18sp"
+        android:text="Working Order: MAT20160900"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/yellow" />
+
+    <LinearLayout
+        android:id="@+id/llBarChart"
+        android:layout_width="700dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/inventory"
+        android:layout_alignLeft="@+id/workingOrder">
+
+    </LinearLayout>
+
+</RelativeLayout>
